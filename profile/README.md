@@ -1,6 +1,6 @@
 ## Hi, welcome to the private Organization of Exogen
 
-<img src="https://avatars.githubusercontent.com/u/ExogenCorporation" alt="Exogen Logo" align="right" width="200" height="200"/>
+<img src="https://avatars.githubusercontent.com/u/173569665?s=200&v=4" alt="Exogen Logo" align="right" width="200" height="200"/>
 
 This is a private organization for **Exogen**, a project focused on the integration of AI and blockchain technologies.
 
