@@ -6,7 +6,7 @@
 
 <br/>
 
-**The intersection of AI and blockchain — automated crypto trading, built for everyone.**
+**The intersection of AI and blockchain: automated crypto trading, built for everyone.**
 
 <br/>
 
@@ -20,7 +20,7 @@
 
 ## About Exogen
 
-**Exogen** is an AI-powered crypto trading platform that turns complex market strategy into something anyone can run. The platform pairs a high-performance quantitative engine with an intuitive web dashboard — backtest a strategy, deploy a bot, and manage funds across major exchanges from a single interface.
+**Exogen** is an AI-powered crypto trading platform that turns complex market strategy into something anyone can run. The platform pairs a high-performance quantitative engine with an intuitive web dashboard. Backtest a strategy, deploy a bot, and manage funds across major exchanges from a single interface.
 
 We build at the boundary of **artificial intelligence** and **blockchain**: machine-assisted strategy execution on one side, on-chain and exchange connectivity on the other.
 
@@ -55,18 +55,18 @@ We build at the boundary of **artificial intelligence** and **blockchain**: mach
 
 ## Architecture
 
-Exogen is a multi-service platform. Each module owns one responsibility and ships in its own repository.
+Exogen ships as a single [`exogen-monorepo`](https://github.com/ExogenCorporation/exogen-monorepo). One platform, cleanly separated into a web app, backend services, a quant engine, and deploy tooling.
 
-| Module | Stack | Role |
+| Path | Stack | Role |
 | :--- | :--- | :--- |
-| **Exo-Frontend** | Next.js · TypeScript | Web dashboard & trading interface |
-| **Exo-APIClient** | Node.js | Public-facing API gateway |
-| **Exo-APIPrivate** | Node.js | Core private backend services |
-| **Exo-BotExecStrat** | Python · C++ | Strategy execution engine |
-| **Exo-BackTester** | C++ · Qt / QML | Backtesting & market simulation |
-| **Exo-OnRoot** | Docker · Bazel | Infrastructure & deployment orchestration |
+| `frontend/` | Next.js · TypeScript | Web dashboard & trading interface |
+| `services/api-client/` | Node.js | Public-facing API gateway |
+| `services/api-private/` | Node.js | Core private backend services |
+| `services/bot-exec/` | Python · C++ | Strategy execution engine |
+| `apps/backtester/` | C++ · Qt / QML | Backtesting & market simulation |
+| `deploy/` | Docker · Kubernetes | Infrastructure & deployment orchestration |
 
-> Most repositories are private and accessible to authorized team members only.
+> The [`exogen-monorepo`](https://github.com/ExogenCorporation/exogen-monorepo) is private and accessible to authorized team members only.
 
 <br/>
 
